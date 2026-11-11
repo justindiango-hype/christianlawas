@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{name}} — {{role}} in {{city}} | Weddings, Maternity, Portraits, Real Estate & Events</title>
+  <meta name="description" content="{{name}} is a {{city}}-based photographer with 7 years of experience in weddings, maternity, portraits, real estate and corporate events.">
+  <meta name="theme-color" content="#F5EFE6">
+  <link rel="canonical" href="{{siteUrl}}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{name}} — {{role}} in {{city}}">
+  <meta property="og:description" content="Weddings, maternity, portraits, real estate and events, photographed in {{city}}.">
+  <meta property="og:url" content="{{siteUrl}}">
+  <meta property="og:site_name" content="{{name}} Photography">
+  <meta property="og:image" content="{{siteUrl}}og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{name}}, {{role}} in {{city}}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{name}} — {{role}} in {{city}}">
+  <meta name="twitter:description" content="Weddings, maternity, portraits, real estate and events, photographed in {{city}}.">
+  <meta name="twitter:image" content="{{siteUrl}}og-image.jpg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ProfessionalService","name":"{{name}} Photography","description":"Wedding, maternity, portrait, real estate and event photography in {{city}}.","areaServed":"{{city}}, United Arab Emirates","email":"{{email}}","telephone":"{{whatsappDisplay}}","url":"{{siteUrl}}"}
+  </script>
+</head>
+<body class="is-loading">
+  <a class="skip" href="#weddings">Skip to the work</a>
+
+  <!-- Preloader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__name"><span>Christian</span><span>Lawas</span></div>
+    <div class="loader__count"><span class="loader__num">00</span><span class="loader__bar"><i></i></span></div>
+  </div>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <a class="topbar__logo" href="#intro" data-goto="0" aria-label="{{name}}, back to start">Christian Lawas</a>
+    <div class="topbar__right">
+      <a class="topbar__link" href="#contact" data-goto="7">Enquire</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="menu-btn__label"><span>Menu</span><span aria-hidden="true">Close</span></span>
+        <span class="menu-btn__icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Chapter rail (desktop) -->
+  <nav class="rail" aria-label="Collections">
+    <a class="rail__item" href="#weddings" data-goto="1" data-for="weddings"><span class="rail__num">01</span><span class="rail__line"></span><span class="rail__label">Weddings</span></a>
+    <a class="rail__item" href="#maternity" data-goto="2" data-for="maternity"><span class="rail__num">02</span><span class="rail__line"></span><span class="rail__label">Maternity</span></a>
+    <a class="rail__item" href="#portraits" data-goto="3" data-for="portraits"><span class="rail__num">03</span><span class="rail__line"></span><span class="rail__label">Portraits</span></a>
+    <a class="rail__item" href="#spaces" data-goto="4" data-for="spaces"><span class="rail__num">04</span><span class="rail__line"></span><span class="rail__label">Spaces</span></a>
+    <a class="rail__item" href="#events" data-goto="5" data-for="events"><span class="rail__num">05</span><span class="rail__line"></span><span class="rail__label">Events</span></a>
+  </nav>
+
+  <!-- Full-screen menu -->
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+    <div class="menu__inner">
+      <p class="kicker menu__kicker"><b>Index</b>Collections</p>
+      <ul class="menu__list">
+        <li><a class="menu__item" href="#weddings" data-goto="1" data-preview="weddings:0"><small>01</small><span class="menu__mask"><span>Weddings</span></span><span class="menu__count" data-count="weddings"></span></a></li>
+        <li><a class="menu__item" href="#maternity" data-goto="2" data-preview="maternity:0"><small>02</small><span class="menu__mask"><span>Maternity</span></span><span class="menu__count" data-count="maternity"></span></a></li>
+        <li><a class="menu__item" href="#portraits" data-goto="3" data-preview="portraits:0"><small>03</small><span class="menu__mask"><span>Portraits</span></span><span class="menu__count" data-count="portraits"></span></a></li>
+        <li><a class="menu__item" href="#spaces" data-goto="4" data-preview="spaces:0"><small>04</small><span class="menu__mask"><span>Spaces</span></span><span class="menu__count" data-count="spaces"></span></a></li>
+        <li><a class="menu__item" href="#events" data-goto="5" data-preview="events:0"><small>05</small><span class="menu__mask"><span>Events</span></span><span class="menu__count" data-count="events"></span></a></li>
+      </ul>
+      <div class="menu__secondary">
+        <a href="#intro" data-goto="0">Home</a>
+        <a href="#about" data-goto="6">About</a>
+        <a href="#contact" data-goto="7">Contact</a>
+      </div>
+      <div class="menu__preview" aria-hidden="true"></div>
+      <div class="menu__foot">
+        <a href="mailto:{{email}}">{{email}}</a>
+        <a href="https://wa.me/{{whatsappNumber}}" target="_blank" rel="noopener">WhatsApp {{whatsappDisplay}}</a>
+        <span class="menu__clock">Dubai <span data-clock>—</span></span>
+      </div>
+    </div>
+  </div>
+
+  <main class="chapters" id="chapters">
+
+    <!-- 00 Intro -->
+    <section class="chapter chapter--intro" id="intro" data-name="Introduction" aria-label="Introduction">
+      <div class="intro__text">
+        <p class="kicker" data-reveal>{{role}} — {{city}}</p>
+        <h1 class="intro__title" data-reveal>
+          <span class="line"><span>Christian</span></span>
+          <span class="line line--indent"><span>Lawas</span></span>
+        </h1>
+        <div class="intro__rotator" data-reveal>
+          <span class="intro__lead">Capturing</span>
+          <span class="rotator" aria-label="Weddings, Maternity, Portraits, Spaces, Events">
+            <span class="rotator__sizer" aria-hidden="true">Maternity.</span>
+            <span class="rotator__word">Weddings.</span>
+            <span class="rotator__word">Maternity.</span>
+            <span class="rotator__word">Portraits.</span>
+            <span class="rotator__word">Spaces.</span>
+            <span class="rotator__word">Events.</span>
+          </span>
+        </div>
+      </div>
+      <figure class="frame frame--intro" data-photo="about:0" data-sizes="(max-width: 860px) 90vw, 40vw" data-alt="Christian Lawas holding his camera, in black and white"></figure>
+      <p class="scroll-cue" data-reveal><span></span>Scroll to begin</p>
+    </section>
+
+    <!-- 01 Weddings -->
+    <section class="chapter chapter--work layout-tall side-right" id="weddings" data-name="Weddings" aria-labelledby="t-weddings">
+      <div class="work__text">
+        <p class="kicker" data-reveal>Weddings</p>
+        <h2 id="t-weddings" class="work__title" data-reveal>Two families,<br>one golden hour.</h2>
+        <p class="work__body" data-reveal>From intimate nikkahs to ceremonies on the Marina, I photograph weddings quietly and closely, so the day is remembered as it felt, not only as it looked.</p>
+        <a class="work__cta" href="#weddings" data-gallery="weddings" data-reveal><span>View the collection</span><small data-count="weddings"></small></a>
+      </div>
+      <figure class="frame frame--main" data-photo="weddings:0" data-alt="Bride and groom celebrating by the water with the Dubai Marina skyline behind them"></figure>
+      <figure class="frame frame--inset" data-photo="weddings:1" data-sizes="20vw" data-alt="Bride and groom exchanging rings beneath a floral arch"></figure>
+    </section>
+
+    <!-- 02 Maternity -->
+    <section class="chapter chapter--work layout-wide side-left" id="maternity" data-name="Maternity" aria-labelledby="t-maternity">
+      <div class="work__text">
+        <p class="kicker" data-reveal>Maternity</p>
+        <h2 id="t-maternity" class="work__title" data-reveal>Waiting,<br>in soft light.</h2>
+        <p class="work__body" data-reveal>Unhurried sessions on the beach at sunset or in the comfort of home, made for the weeks you will want to remember most.</p>
+        <a class="work__cta" href="#maternity" data-gallery="maternity" data-reveal><span>View the collection</span><small data-count="maternity"></small></a>
+      </div>
+      <figure class="frame frame--main" data-photo="maternity:0" data-alt="Expecting couple walking hand in hand along the beach"></figure>
+      <figure class="frame frame--inset" data-photo="maternity:1" data-sizes="20vw" data-alt="Expecting parents holding up an ultrasound photo"></figure>
+    </section>
+
+    <!-- 03 Portraits -->
+    <section class="chapter chapter--work layout-tall side-right" id="portraits" data-name="Portraits" aria-labelledby="t-portraits">
+      <div class="work__text">
+        <p class="kicker" data-reveal>Portraits</p>
+        <h2 id="t-portraits" class="work__title" data-reveal>People,<br>as they are.</h2>
+        <p class="work__body" data-reveal>Indoor studio headshots and natural-light portraits: clean, considered and true to the person in front of the lens.</p>
+        <a class="work__cta" href="#portraits" data-gallery="portraits" data-reveal><span>View the collection</span><small data-count="portraits"></small></a>
+      </div>
+      <figure class="frame frame--main" data-photo="portraits:0" data-alt="Studio portrait of a toddler in a party hat"></figure>
+      <figure class="frame frame--inset" data-photo="portraits:2" data-sizes="20vw" data-alt="Portrait by Christian Lawas"></figure>
+    </section>
+
+    <!-- 04 Spaces -->
+    <section class="chapter chapter--work layout-wide side-left" id="spaces" data-name="Spaces" aria-labelledby="t-spaces">
+      <div class="work__text">
+        <p class="kicker" data-reveal>Spaces — Real Estate</p>
+        <h2 id="t-spaces" class="work__title" data-reveal>Light, line<br>and marble.</h2>
+        <p class="work__body" data-reveal>Architectural and real estate photography for homes and interiors across Dubai, composed to show the space and sell the feeling.</p>
+        <a class="work__cta" href="#spaces" data-gallery="spaces" data-reveal><span>View the collection</span><small data-count="spaces"></small></a>
+      </div>
+      <figure class="frame frame--main" data-photo="spaces:0" data-alt="Bright villa interior with floor-to-ceiling windows"></figure>
+      <figure class="frame frame--inset" data-photo="spaces:1" data-sizes="20vw" data-alt="Glass staircase in a modern villa"></figure>
+    </section>
+
+    <!-- 05 Events -->
+    <section class="chapter chapter--work layout-wide side-right" id="events" data-name="Events" aria-labelledby="t-events">
+      <div class="work__text">
+        <p class="kicker" data-reveal>Events</p>
+        <h2 id="t-events" class="work__title" data-reveal>The room,<br>remembered.</h2>
+        <p class="work__body" data-reveal>Corporate events, stage performances, launches and celebrations, documented with energy and an eye for the details that matter.</p>
+        <a class="work__cta" href="#events" data-gallery="events" data-reveal><span>View the collection</span><small data-count="events"></small></a>
+      </div>
+      <figure class="frame frame--main" data-photo="events:0" data-alt="Guests arriving through a softly lit arched corridor at an evening event"></figure>
+      <figure class="frame frame--inset" data-photo="events:1" data-sizes="20vw" data-alt="Volunteer at a Dubai community run"></figure>
+    </section>
+
+    <!-- 06 About -->
+    <section class="chapter chapter--about" id="about" data-name="About" aria-labelledby="t-about">
+      <figure class="frame frame--about" data-photo="about:1" data-sizes="(max-width: 860px) 90vw, 34vw" data-alt="Portrait of photographer Christian Lawas with his camera"></figure>
+      <div class="about__text" data-scroll-area>
+        <p class="kicker" data-reveal>About</p>
+        <h2 id="t-about" class="about__title" data-reveal>Clean, compelling visuals, told with intention.</h2>
+        <div class="about__stat" data-reveal><span class="about__num">7</span><span class="about__label">Years<br>behind the lens</span></div>
+        <p class="about__body" data-reveal>Based in Dubai with 7 years of experience behind the lens, I specialize in crafting clean, compelling visuals across commercial and lifestyle photography. My work ranges from high-energy corporate events and architectural real estate to intimate weddings, indoor studio headshots, maternity, and couple portraiture.</p>
+        <p class="about__body" data-reveal>Whether documenting live stage performances, detailing luxury interior design, or framing candid emotional moments between loved ones, my approach balances composition, lighting, and detail to tell an authentic visual story tailored to every client.</p>
+        <p class="about__tags" data-reveal>Weddings · Maternity · Portraits · Spaces · Events · Corporate</p>
+      </div>
+    </section>
+
+    <!-- 07 Contact -->
+    <section class="chapter chapter--contact" id="contact" data-name="Contact" aria-labelledby="t-contact">
+      <div class="contact__inner">
+        <p class="kicker" data-reveal>Enquiries</p>
+        <h2 id="t-contact" class="contact__title" data-reveal>Let’s create<br>something timeless.</h2>
+        <div class="contact__links">
+          <a class="contact__link" href="mailto:{{email}}" data-reveal>
+            <span class="contact__label">Email</span>
+            <span class="contact__value">{{email}}</span>
+          </a>
+          <a class="contact__link" href="https://wa.me/{{whatsappNumber}}" target="_blank" rel="noopener" data-reveal>
+            <span class="contact__label">WhatsApp</span>
+            <span class="contact__value">{{whatsappDisplay}}</span>
+          </a>
+        </div>
+      </div>
+      <footer class="footer" data-reveal>
+        <span>© <span data-year>2026</span> {{name}} — {{city}}</span>
+        <span class="footer__credit">{{creditTitle}} — <a href="{{creditUrl}}" target="_blank" rel="noopener">{{creditName}}</a></span>
+      </footer>
+    </section>
+  </main>
+
+  <!-- Progress and controls -->
+  <nav class="progress" aria-label="Chapter controls">
+    <span class="progress__name" aria-live="polite"></span>
+    <span class="progress__count"><span class="progress__current">00</span><span class="progress__bar"><i></i></span><span class="progress__total">07</span></span>
+    <button class="progress__btn progress__btn--prev" type="button" aria-label="Previous chapter"><svg viewBox="0 0 24 24"><path d="M14.5 6 8.5 12l6 6"/></svg></button>
+    <button class="progress__btn progress__btn--next" type="button" aria-label="Next chapter"><svg viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6"/></svg></button>
+  </nav>
+
+  <!-- Collection gallery (filled by gallery.js) -->
+  <div class="gallery" id="gallery" role="dialog" aria-modal="true" aria-labelledby="gallery-title" hidden>
+    <div class="gallery__bar">
+      <p class="kicker gallery__crumb"><span data-g="crumb">Collection</span></p>
+      <button class="gallery__close" type="button"><span>Close</span><span class="menu-btn__icon is-x" aria-hidden="true"><i></i><i></i></span></button>
+    </div>
+    <div class="gallery__scroller">
+      <div class="gallery__content">
+        <header class="gallery__head">
+          <p class="kicker" data-g-reveal><span data-g="count">Photographs</span></p>
+          <h2 class="gallery__title" id="gallery-title"><span class="gallery__mask"><span data-g="title">Weddings</span></span></h2>
+          <p class="gallery__intro" data-g-reveal data-g="intro"></p>
+        </header>
+        <div class="gallery__grid" data-g="grid"></div>
+        <footer class="gallery__foot">
+          <a class="gallery__next" href="#" data-g="next"><span class="kicker">Next collection</span><span class="gallery__next-title" data-g="nextTitle">Maternity</span></a>
+          <div class="gallery__actions">
+            <a class="work__cta" href="#contact" data-g="enquire"><span>Enquire about a session</span></a>
+            <button class="work__cta" type="button" data-g="top"><span>Back to top</span></button>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- Full-screen photo viewer (filled by lightbox.js) -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <div class="lightbox__stage"></div>
+    <div class="lightbox__bar">
+      <span class="lightbox__label" data-lb="label">Weddings</span>
+      <span class="lightbox__count"><span data-lb="current">01</span><span class="progress__bar"><i data-lb="bar"></i></span><span data-lb="total">13</span></span>
+      <button class="progress__btn" type="button" data-lb="prev" aria-label="Previous photo"><svg viewBox="0 0 24 24"><path d="M14.5 6 8.5 12l6 6"/></svg></button>
+      <button class="progress__btn" type="button" data-lb="next" aria-label="Next photo"><svg viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6"/></svg></button>
+    </div>
+    <button class="gallery__close lightbox__close" type="button" data-lb="close"><span>Close</span><span class="menu-btn__icon is-x" aria-hidden="true"><i></i><i></i></span></button>
+  </div>
+
+  <noscript><style>.loader{display:none}</style></noscript>
+  <div class="grain" aria-hidden="true"></div>
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
