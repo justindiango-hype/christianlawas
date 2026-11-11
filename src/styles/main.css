@@ -273,12 +273,12 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 
 @media (max-width: 860px), (max-width: 1180px) and (orientation: portrait), (max-height: 500px) and (orientation: landscape) {
-  :root { --gutter: 20px; --rail: 0px; --top: 76px; --bottom: 92px; }
+  :root { --gutter: 24px; --rail: 0px; --top: 78px; --bottom: 100px; }
   .topbar__logo { font-size: 11px; letter-spacing: .3em; }
   .topbar__link { padding: 10px 16px; }
 
   /* Phones: every chapter becomes a simple column — photo on top, words below. */
-  .chapter { display: flex; flex-direction: column; gap: 22px; padding-bottom: calc(var(--bottom) - 8px); }
+  .chapter { display: flex; flex-direction: column; gap: 34px; padding-bottom: var(--bottom); }
   .chapter .frame, .chapter .work__text, .chapter .intro__text, .chapter .about__text, .contact__inner, .footer {
     position: relative; inset: auto !important; transform: none; width: auto; max-width: none; height: auto;
   }
@@ -286,27 +286,35 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .chapter--work .frame--inset, .scroll-cue { display: none; }
 
   .intro__title { font-size: clamp(60px, 18vw, 104px); }
-  .intro__title .line--indent { padding-left: .6em; }
-  .intro__text .kicker { margin-bottom: 14px; }
-  .intro__rotator { margin-top: 14px; padding-left: .1em; }
+  .intro__title .line--indent { padding-left: 0; }   /* phones: "Lawas" lines up under "Christian" */
+  .intro__text .kicker { margin-bottom: 20px; }
+  .intro__rotator { margin-top: 22px; padding-left: .1em; }
 
-  .work__title { font-size: clamp(36px, 10.6vw, 54px); }
-  .work__body { font-size: 14px; margin-top: 12px; }
-  .work__cta { margin-top: 16px; }
-  .work__text .kicker { margin-bottom: 12px; }
+  .work__title { font-size: clamp(36px, 10.6vw, 54px); line-height: 1; }
+  .work__body { font-size: 14.5px; line-height: 1.75; margin-top: 20px; }
+  .work__cta { margin-top: 28px; }
+  .work__text .kicker { margin-bottom: 18px; }
 
   .frame--about { flex: 0 0 30%; }
   .frame--about img { object-position: 50% 30%; }
   .about__text { flex: 1 1 0; min-height: 0; display: block; overflow-y: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; padding-bottom: 20px;
     mask-image: linear-gradient(to bottom, #000 calc(100% - 28px), transparent); -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 28px), transparent); }
-  .about__title { font-size: 30px; }
+  .about__text .kicker { margin-bottom: 18px; }
+  .about__title { font-size: 30px; line-height: 1.12; }
+  .about__stat { margin: 26px 0 24px; }
   .about__num { font-size: 68px; }
+  .about__body { line-height: 1.8; }
+  .about__body + .about__body { margin-top: 18px; }
+  .about__tags { margin-top: 26px; padding-top: 20px; }
 
   .chapter--contact { justify-content: space-between; }
   .contact__inner { padding-top: 3vh; }
+  .contact__inner .kicker { margin-bottom: 20px; }
   .contact__title { font-size: clamp(46px, 13.5vw, 72px); }
-  .contact__links { grid-template-columns: 1fr; margin-top: 28px; }
-  .contact__value { font-size: 19px; }
+  .contact__links { grid-template-columns: 1fr; margin-top: 40px; }
+  .contact__link { padding: 24px 0 22px; }
+  .contact__label { margin-bottom: 14px; }
+  .contact__value { font-size: min(19px, 5.1vw); }   /* the email always fits on one line */
   .footer { flex-direction: column; gap: 4px; font-size: 9px; margin-right: 0; }
 
   .progress { right: var(--gutter); bottom: max(22px, env(safe-area-inset-bottom)); gap: 10px; }
@@ -679,6 +687,11 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 
 /* short phones held upright (iPhone SE and similar) */
 @media (max-height: 700px) and (max-width: 860px) and (orientation: portrait) {
+  .chapter { gap: 24px; }
+  .work__body { margin-top: 14px; line-height: 1.65; }
+  .work__cta { margin-top: 20px; }
+  .work__text .kicker, .intro__text .kicker { margin-bottom: 14px; }
+  .intro__rotator { margin-top: 16px; }
   .contact__inner { padding-top: 0; }
   .contact__title { font-size: clamp(40px, 12vw, 52px); }
   .contact__links { margin-top: 18px; }
