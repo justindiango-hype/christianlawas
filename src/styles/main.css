@@ -139,7 +139,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .intro__title { font: 400 clamp(64px, 10.4vw, 188px)/.86 var(--serif); letter-spacing: -0.03em; }
 .intro__title .line { display: block; overflow: hidden; padding-bottom: .04em; }
 .intro__title .line > span { display: block; }
-.intro__title .line--indent { padding-left: .9em; color: var(--brown); }
+.intro__title .line--indent { color: var(--brown); }   /* "Lawas" lines up under "Christian" */
 .intro__rotator { display: flex; align-items: baseline; gap: 16px; margin-top: clamp(18px, 3vh, 30px); padding-left: .3em; }
 .intro__lead { font: 600 10.5px/1 var(--sans); letter-spacing: .24em; text-transform: uppercase; color: var(--tan); }
 .rotator { position: relative; display: block; overflow: hidden; font: 400 clamp(24px, 2.6vw, 40px)/1.15 var(--serif); color: var(--espresso); }
@@ -286,7 +286,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .chapter--work .frame--inset, .scroll-cue { display: none; }
 
   .intro__title { font-size: clamp(60px, 18vw, 104px); }
-  .intro__title .line--indent { padding-left: 0; }   /* phones: "Lawas" lines up under "Christian" */
   .intro__text .kicker { margin-bottom: 20px; }
   .intro__rotator { margin-top: 22px; padding-left: .1em; }
 
@@ -295,8 +294,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .work__cta { margin-top: 28px; }
   .work__text .kicker { margin-bottom: 18px; }
 
-  .frame--about { flex: 0 0 30%; }
-  .frame--about img { object-position: 50% 30%; }
+  .frame--about { flex: 0 0 56%; }   /* a big portrait of Christian on phones; the words scroll below */
+  .frame--about img { object-position: 50% 32%; }
   .about__text { flex: 1 1 0; min-height: 0; display: block; overflow-y: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; padding-bottom: 20px;
     mask-image: linear-gradient(to bottom, #000 calc(100% - 28px), transparent); -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 28px), transparent); }
   .about__text .kicker { margin-bottom: 18px; }
@@ -697,7 +696,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .contact__links { margin-top: 18px; }
   .contact__link { padding: 14px 0 12px; }
   .contact__label { margin-bottom: 8px; }
-  .frame--about { flex-basis: 26%; }
+  .frame--about { flex-basis: 50%; }
   .work__title { font-size: clamp(32px, 9.6vw, 44px); }
   .work__body { font-size: 13px; }
 }
